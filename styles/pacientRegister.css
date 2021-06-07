@@ -1,0 +1,84 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+body a:nth-child(1){
+  
+  padding: 20px 20px 20px 20px;
+}
+
+aside {
+  width: 31.62rem;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+aside h1 {
+  margin-top:6.5rem;
+  font-size:30px;
+  padding-left: 1rem;
+}
+aside img {
+  
+  margin-top: 2.75rem;
+  height:15.93rem;
+  width: 15.93rem;
+}
+main h1 {
+  margin-top: 7.6rem;
+
+}
+main {
+  width: 100%; 
+  background-color: #fff;
+  padding-left: 5rem;
+}
+main form {
+  
+  margin-top:3.875rem;
+  width: 37.5rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.625rem;
+  row-gap: 4.125rem;
+
+}
+
+.input-area {
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #1F6287;
+  width: 16.8rem;
+  height: 5.18rem;
+}
+
+input {
+  font-size: 20px;
+  width: 16rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  padding:10px;
+  color: black;
+}
+#buttondiv{
+  margin-top:5.18rem;
+  width: 37.5rem;
+  text-align: center;
+}
+#buttondiv button {
+  width: 10.75rem;
+  height: 2.5rem;
+  font-size:25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2F658B;
+  color: #fff;
+}
+select {
+
+  width: 16rem;
+  height: 2.5rem;
+  font-size:24px;
+}

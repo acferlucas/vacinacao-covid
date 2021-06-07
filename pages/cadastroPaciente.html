@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/pacientRegister.css">
+  <title>Cadastro Pacientes</title>
+</head>
+<body>
+  <a href="../index.html"><img src="../assets/Vector (2).png" alt=""></a>
+  <aside>
+    <h1>Cadastramento de Pacientes</h1>
+    <img src="../assets/patient.png" alt="Vacine bottle">
+  </aside>
+  <main>
+    <h1>Paciente</h1>
+    <form  name="registration" onsubmit="submitForm(event)">
+      <div class="input-area">
+        <p>Nome</p>
+        <input type="text" name="nome">
+      </div>
+      <div class="input-area">
+        <p>Data Nascimento</p>
+        <input type="date" name="data">
+      </div>
+      <div class="input-area">
+        <p>Caracteristicas</p>
+        <input type="text" name="caracteristicas">
+      </div>
+      <div class="input-area">
+        <p>Grupo</p>
+        <select>
+          <option value="Selecionar">Selecionar</option>
+        </select>
+      </div>
+    </form>
+    <div id="buttondiv" onclick="handleSubmitButtonClick()">
+      <button>Cadastrar</button>
+    </div>
+  </main>
+  <script src="../scripts/pacientregister.js"></script>
+</body>
+</html>

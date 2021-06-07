@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/profissionalRegister.css">
+  <title>Cadastro Profissional</title>
+</head>
+<body>
+  <a href="../index.html"><img src="../assets/Vector (2).png" alt="back-arrow"></a>
+  <aside>
+    <h1>Cadastro de Profissional de Enfermagem</h1>
+    <img src="../assets/nurse.png" alt="">
+  </aside>
+  <main>
+    <h1>Cadastrar Profissional</h1>
+    <form name="registration" onsubmit="submitForm(event)">
+      <div class="input-area">
+        <p>Nome</p>
+        <input type="text" name="nome">
+      </div>
+      <div class="input-area">
+        <p>Coren</p>
+        <input type="text" name="coren">
+      </div>
+      <div class="input-area">
+        <p>Ano de formação</p>
+        <input type="date" name="ano">
+      </div>
+      <div class="input-area">
+        <p>Contato</p>
+        <input type="text" name="contato">
+      </div>
+    </form>
+    <div id="buttondiv">
+      <button type="submit" onclick="handleSubmitButtonClick()">Cadastrar</button>
+    </div>
+  </main>
+  <script src="../scripts/nurseregister.js"></script>
+</body>
+</html>

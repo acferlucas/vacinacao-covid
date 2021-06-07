@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/pacientes.css">
+  <title>Pacientes</title>
+</head>
+<body>
+  <a href="../index.html"><img src="../assets/Vector (2).png" alt=""></a>
+  <main>
+    <h1>Pacientes Registrados</h1>
+    <div id="main-div">
+      <div id="input-area">
+        <input type="text" placeholder="Pesquisar">
+        <i data-feather="search" onclick="pesquisar()"></i>
+      </div>
+      <div id="content">
+        <div id="total">
+        </div>
+        <div id="vacinados">
+        </div>
+        <div id="naovacinados">
+        </div>
+      </div>
+      <a href="cadastroPaciente.html"><button><i data-feather="plus"></i>Novo Paciente</button></a>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome <i data-feather="chevron-down"></i></th>
+          <th>Data Nascimento<i data-feather="chevron-down"></i></th>
+          <th>Caracteristicas<i data-feather="chevron-down"></i></th>
+          <th>Grupo<i data-feather="chevron-down"></i></th>
+          <th>Aplicações<i data-feather="chevron-down"></i></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </main>
+  <script src="../scripts/pacient.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <div class="modal">
+    <button id="modal-close" onclick="closeModal()"><img src="../assets/x-circle.png" alt="" style="color:#1A4963;"></button>
+    <h1>Aplicar Vacina</h1>
+    <form name="aplication" onsubmit=handleSubmit(event)>
+      <div>
+        <p>Nome Paciente</p>
+        <input type="text" id="nome" placeholder="Nome do paciente">
+      </div>
+      <div>
+        <p>Aplicador</p>
+        <select id="aplicador-vacina">
+          <option selected disabled>Aplicador</option>
+        </select>
+      </div>
+      <div>
+        <p>Vacina</p>
+        <select id="vacina-aplicada">
+          <option selected disabled>Vacina</option>
+        </select>
+      </div>
+      <div>
+        <p>Descrição</p>
+        <input type="text" id="description">
+      </div>
+      <button type="submit">Aplicar</button>
+    </form>
+  </div>
+</body>
+</html>

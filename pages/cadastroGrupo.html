@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/GroupRegister.css">
+  <title>Cadastro Grupo</title>
+</head>
+<body>
+  <a href="../index.html"><img src="../assets/Vector (2).png" alt="back-arrow"></a>
+  <aside>
+    <h1>Cadastramento de Grupos</h1>
+    <img src="../assets/image 14.png" alt="Group icon">
+  </aside>
+  <main>
+    <h1>Cadastrar</h1>
+      <form  name="registration" onsubmit="submitForm(event)">
+        <div class="input-area">
+          <p>Nome do Grupo</p>
+          <input type="text" name="denominacao">
+        </div>
+        <div class="input-area">
+          <p>idade Minima</p>
+          <input type="number" name="minage">
+        </div>
+        <div class="input-area">
+          <p>Idade Maxima</p>
+          <input type="number" name="maxage">
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+  </main>
+  <script src="../scripts/groupregister.js"></script>
+</body>
+</html>
